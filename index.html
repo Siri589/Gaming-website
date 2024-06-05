@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">  <script src="script.js"></script>  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>RIGHTS QUEST</p>
+            </div>
+            <ul class="navbar">
+                
+  <input type="text" id="userQuery">
+  <button onclick="chatbotResponse()">Send</button>
+  <div id="chatbox"></div>
+  <div id="data-container"></div>
+  <script>
+  async function fetchData() {
+    try {
+      const response = await fetch('/get_data');
+      const data = await response.json();
+      document.getElementById('data-container').innerHTML = data.message; // Replace with appropriate property
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      document.getElementById('data-container').innerHTML = 'Error retrieving data.';
+    }
+  }
+  fetchData();
+
+    function chatbotResponse() {
+      // Get user query from input field
+      const userInput = document.getElementById('userQuery').value;
+
+      // Process user query using chatbot logic (replace with your actual logic)
+      const response = process.env.API_KEY;;
+
+      // Update chatbox with chatbot response
+      document.getElementById('chatbox').innerHTML += response;
+    }
+  </script>
+                <li><a href="#">MINI GAMES</a></li>
+                <li><a href="#">CROSSWORD</a></li>
+                <li><a href="#">PUZZLES</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">READ A STORY</a></li>
+            </ul>
+            
+        </header>
+
+
+        <div class="content-wrapper">
+            <div class="content-desc">
+                <h1 class="typewriter-text">RIGHTS QUEST</h1>
+
+                <p>Learn about <span>RIGHTS</span> in this gaming platform and be ready 
+                    to challenge anyone judicially.</p>
+                <p>A fun interactive platform to overcome traditional boring methods of learning about 
+                    Rights.</p>
+
+                <button id="btn2">Challenge Now</button>
+                <button onclick="openWebpage()" type="button" id="btn"><i class="fas fa-play"></i>PLAY NOW</button>
+                <script src="login.js"></script>
+            </div>
+
+            <div class="rakuto"></div>
+        </div>
+    </div>
+
+    <div class="logo-section">
+        <i class="fas fa-gamepad"></i>
+        <h1>RIGHTS QUEST</h1>
+    </div>
+    
+    <section class="section-1">
+        <div class="section-1-wrapper">  
+            <script src="script.js"></script>
+            <h1>COMICS AND JOURNELS</h1>
+            <br>
+            <div class="section-1-img">
+                <a href="comic.html"><div class="IMG1"></div></a>
+                <a href="comic.html"><div class="img img-2"></div></a>
+                <a href="https://Desktop\RV\my-gaming-website-master"><div class="img img-3"></div></a>
+                <a href="#"><div class="img img-4"></div></a>
+                <a href="https://http:my-gaming-website-master/comic.html/"><div class="img img-5"></div></a>
+
+                <a href="#"><div class="img img-6"></div></a>
+                <a href="#"><div class="img img-2"></div></a>
+                <a href="#"><div class="img img-3"></div></a>
+            </div>
+        </div>
+        
+        <div class="game-categories">
+            <h1>MINIGAMES</h1>
+            <div class="game-wrapper">
+                <a href="#"><div class="gw gw-1"></div></a>
+                <a href="#"><div class="gw gw-2"></div></a>
+                <a href="#"><div class="gw gw-3"></div></a>
+                <a href="#"><div class="gw gw-4"></div></a>
+                <a href="#"><div class="gw gw-5"></div></a>
+            </div>
+    
+            <div class="game-wrapper left">
+                <a href="#"><div class="gw gw-6"></div></a>
+                <a href="#"><div class="gw gw-7"></div></a>
+                <a href="#"><div class="gw gw-8"></div></a>
+                <a href="#"><div class="gw gw-9"></div></a>
+                <a href="#"><div class="gw gw-10"></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New section is down here below -->
+
+    <section class="section-2">
+        <h1>RIGHTS</h1>
+        <div class="players">
+            <div class="p-image "></div>
+            <span>RIGHT TO VOTE</span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <!-- Player 2 -->
+        <div class="players">
+            <div class="p-image p-image-2"></div>
+            <span>RIGHT TO EDUCATION</span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+             <!-- Player 3 -->
+        <div class="players">
+            <div class="p-image "></div>
+            <span>RIGHT TO EQUALITY</span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+             <!-- Player 4 -->
+        <div class="players">
+            <div class="p-image p-image-4"></div>
+            <span>RIGHT TO FREEDOM</span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </section>
+    <div class="section-3">
+        <h1>What People say About us</h1>
+        <div class="section-3-wrapper">
+            <div class="feedback"></div>
+            <div class="feedback-desc">
+                <p>Rights Quest is an innovative gamified platform designed to provide legal education through engaging and interactive methods. By combining traditional legal instruction with game mechanics, LawQuest aims to make learning law more accessible and enjoyable for students, anyone interested in understanding legal principles</p>
+                <br>
+                <i class="far fa-grin-squint-tears"></i><br>
+                <h4>GFG</h4>
+            </div>
+            <!-- =========================== -->
+            <div class="feedback f-img-2"></div>
+            <div class="feedback-desc">
+                <p>Rights Quest successfully combines legal education with gamification to create an engaging and effective learning platform. Its interactive lessons, simulated case studies, and community features make it a valuable resource for anyone interested in learning about the law. Ultimately educating children, and the platform designed is unique .</p>
+                <i class="far fa-grin-beam-sweat"></i><br>
+                <h4>SWETHA KRISHNA</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-body">
+            <div class="logo footer-logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>RIGHTS QUEST</h1>
+            </div>
+            <ul>
+                <h3>Short Links</h3>
+                <li><a href="#">CHATBOT</a></li>
+                <li><a href="#">PUZZLES</a></li>
+                <li><a href="#">MEMORY GAME</a></li>
+                <li><a href="#">CROSSWORD</a></li>
+                <li><a href="#">SNAKE GAME</a></li>
+            </ul>
+
+            <ul>
+                <h3>JUDGEMENTS</h3>
+                <li><a href="#">DELHI</a></li>
+                <li><a href="#">CHENNAI</a></li>
+                <li><a href="#">BANGLORE</a></li>
+                <li><a href="#">MUMBAI</a></li>
+                <li><a href="#">KERALA</a></li>
+            </ul>
+            <ul>
+                <h3>Get In Touch</h3>
+                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; All Right Reserved | Designed <span>By Team RightsQuest</span> 2024</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
